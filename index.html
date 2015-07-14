@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Sedona</title>
+	<link href="css/normalize.min.css" rel="stylesheet">
+	<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+	<link href="css/style.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="wrapper index">
+		<header class="main-header">
+			<nav class="main-nav">
+				<ul class="clearfix">
+					<li><a href="#">Информация</a></li>
+					<li><a href="#">Фото и видео</a></li>
+					<li><a href="#">Карта штата</a></li>
+					<li><a href="inner.html">Гостиницы</a></li>
+				</ul>
+				<div class="logo">
+				<img src="img/logo.png" height="70" width="138" alt="Sedona">
+			</div>
+			</nav>
+		</header>
+		<div class="main-content clearfix">
+			<div class="main-photo">
+				<div class="promo-text">
+				<img src="img/welcome.png" height="352" width="458" alt="welcome">
+				</div>
+			<div class="main-photo-border"></div>
+			</div>
+			<div class="description">
+				<h1>Седона — небольшой городок в Аризоне, заслуживающий большего!</h1>
+				<p>Рассмотрим 5 причин, по которым Седона круче чем Гранд Каньон!</p>
+			</div>
+			<div class="advantages clearfix">
+				<div class="desc">
+					<h2>Настоящий городок</h2>
+					<span class="line">№1</span>
+					<p>Седона не атракцион для туристов, там течет своя жизнь</p>
+				</div>
+				<div class="desc-banner">
+				<img src="img/pic-1.jpg" height="1600" width="800" alt="Sedona">
+				</div>
+			</div>
+			<div class="advantages-row clearfix">
+				<div class="advantages-item">
+						<img src="img/home.png" height="76" width="75" alt="advantages">
+					<h2>Жилье</h2>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+				</div>
+				<div class="advantages-item">
+						<img src="img/eat.png" height="76" width="75" alt="advantages">
+					<h2>Еда</h2>
+					<p>Всегда заказывай фирменный бургер, вы не разочаруетесь!</p>
+				</div>
+				<div class="advantages-item">
+						<img src="img/gift.png" height="76" width="75" alt="advantages">
+					<h2>Сувениры</h2>
+					<p>Не только китайского, но и местного производства!</p>
+				</div>
+			</div>
+			<div class="advantages clearfix">
+				<div class="desc-banner">
+				<img src="img/pic-2.jpg" height="256" width="512" alt="Sedona">
+				</div>
+				<div class="desc">
+					<h2>Там есть мост Дьявола</h2>
+					<span class="line">№2</span>
+					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				</div>
+			</div>
+			<div class="advantages-row colorful clearfix">
+				<div class="advantages-item r2">
+					<h2>Небольшая площадь</h2>
+					<span class="line">№3</span>
+					<p>Все достопримеча-<br>тельности находятся очень близко</p>
+				</div>
+				<div class="advantages-item r2">
+					<h2>Красивая дорога</h2>
+					<span class="line">№4</span>
+					<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				</div>
+				<div class="advantages-item r2">
+					<h2>Мало туристов</h2>
+					<span class="line">№5</span>
+					<p>Большинство едет в Гранд Каньон и толпятся там</p>
+				</div>
+			</div>
+			<div class="search clearfix">
+				<h2>Заинтересовались?</h2>
+				<p class="spoiler-form">Укажите предполагаемые даты поездки <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<a href="search-result.html" class="btn-search">Поиск гостиницы в Седоне</a>
+				<div class="modal-content">
+					<form class="search-form clearfix" action="/echo" method="post">
+						<div class="search-row clearfix">
+							<label for="date-arrival">Дата заезда:</label>
+							<div class="input-date-container">
+								<input type="text" id="date-arrival" name="date-arrival" required class="date" value="" placeholder="24 апреля 2014">
+								<button type="button" class="icon-calendar"></button>
+							</div>
+						</div>
+						<div class="search-row clearfix">
+							<label for="date-departure">Дата выезда:</label>
+							<div class="input-date-container">
+								<input type="text" id="date-departure" name="date-departure" required class="date" value="" placeholder="4 июля 2014">
+								<button type="button" class="icon-calendar"></button>
+							</div>
+						</div>
+						<div class="search-row clearfix">
+							<div class="adult clearfix">
+								<label for="adult-count">Взрослые:</label>
+								<div class="count-container">
+									<button type="button" class="icon-minus"></button>
+									<input type="text" id="adult-count" name="adult-count" required class="input-count" value="" placeholder="2">
+									<button type="button" class="icon-plus"></button>
+								</div>
+							</div>
+							<div class="children clearfix">
+								<label for="children-count">Дети:</label>
+								<div class="count-container">
+									<button type="button" class="icon-minus"></button>
+									<input type="text" id="children-count" name="children-count" required class="input-count" value="" placeholder="0">
+									<button type="button" class="icon-plus"></button>
+								</div>
+							</div>
+						</div>
+						<button type="submit" class="find-btn">Найти</button>
+					</form>
+				</div>
+			</div>
+			<div class="map" id="map-canvas"></div>
+		</div>
+		<footer class="main-footer">
+			<div class="footer-container-index clearfix">
+			<div class="instagram">
+				<a href="#" class="inst-comment">#visitsedona</a>
+			</div>
+			<div class="social-btn">
+				<a href="#" class="social-icon social-btn-tw"><i class="icon-twitter"></i></a>
+				<a class="social-icon social-btn-fb" href="#"><i class="icon-facebook"></i></a>
+				<a class="social-icon social-btn-youtube" href="#"><i class="icon-youtube"></i></a>
+			</div>
+			<div class="footer-copyright">
+				<span class="text-copyright">website by</span>
+				<a class="footer-logo" href="#"></a>
+			</div>
+			</div>
+		</footer>
+	</div>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBN8c_XU2YPc-PtrYBpBN_uidO_xlDedtk&amp;sensor=false">
+	</script>
+	<script type="text/javascript" src="js/script.min.js"></script>
+</body>
+</html>
